@@ -1,0 +1,23 @@
+Some SNMP Object ID to monitor:
+
+
+  Cisco routers:
+    free memory      1.3.6.1.4.1.9.9.48.1.1.1.6.1 (Gauge value)
+    cpu  load        1.3.6.1.4.1.9.2.1.56.0       (Gauge value)
+
+    Ethernet port traffic
+	  outgoing   1.3.6.1.2.1.2.2.1.16.1
+          incoming   1.3.6.1.2.1.2.2.1.10.1
+
+    Serial Port traffic
+          outgoing   1.3.6.1.2.1.2.2.1.16.2
+          incoming   1.3.6.1.2.1.2.2.1.10.2
+
+  Livingston PM:
+    Ethernet port traffic
+          outgoing   1.3.6.1.2.1.2.2.1.16.1
+          incoming   1.3.6.1.2.1.2.2.1.10.1
+
+    Serial (Wan) port traffic
+	  outgoing   1.3.6.1.2.1.2.2.1.16.97
+          incoming   1.3.6.1.2.1.2.2.1.10.97

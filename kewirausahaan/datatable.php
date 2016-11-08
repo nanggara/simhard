@@ -1,0 +1,31 @@
+<div id="contentkewirausahaan" class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Kewirausahaan</th>
+				<th></th> 
+			</tr>
+		</thead>
+		<tbody> 
+			<?php foreach ($datakewirausahaan->result() as $item){?>
+			<tr>
+				<td class="col-lg-1"><?php echo $item->kodekwu;?></td>
+			    <td><?php echo $item->namausaha;?></td> 
+			    <td class="col-lg-2 text-center">
+			    	<a href="javascript:;" onclick="kewirausahaan_select_row(<?php echo $item->kodekwu;?>)"><i class="fa fa-edit"></i></a>
+			    	<a href="javascript:;" onclick="kewirausahaan_delete_row(<?php echo $item->kodekwu;?>)"><i class="fa fa-trash-o"></i></a>
+			    </td>
+			</tr>
+			<?php }?>
+		</tbody>
+	</table>
+</div> 
+<div class="col-sm-12">
+	<div class="text-center">
+     	<?php echo $pagingkewirausahaan;?>
+	</div>
+</div>  
+<script>
+	<?php include("paging.js");?>
+</script>
